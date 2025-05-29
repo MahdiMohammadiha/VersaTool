@@ -26,9 +26,11 @@ pip install versatool
 ```
 
 
-## 🌐 GitHub
+## 🌐 Project
 
-🔗 [View the project on GitHub](https://github.com/MahdiMohammadiha/VersaTool)
+🔗 [GitHub](https://github.com/MahdiMohammadiha/VersaTool)
+
+🔗 [Website](https://mahdimohammadiha.github.io/VersaTool)
 
 
 ## Author
