@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>VersaTool</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <button id="toggle-theme" title="Toggle theme">🌙</button>
+        <h1>VersaTool</h1>
+        <p><strong>VersaTool</strong> is a lightweight utility library that helps you write less code while doing more.
+        </p>
+        <p>It simplifies working with various Python libraries by offering versatile helper functions and wrappers that
+            reduce boilerplate, improve readability, and streamline common tasks.</p>
+        <p>Whether you're building scripts, web apps, or data pipelines, VersaTool aims to make your Python development
+            easier and cleaner.</p>
+
+        <p>
+            🔗 View the project on
+            <a href="https://github.com/MahdiMohammadiha/VersaTool" target="_blank">GitHub</a>
+        </p>
+
+        <footer>
+            Created by <strong>Mahdi Mohammadiha</strong> &mdash; &copy; 2025
+        </footer>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggle-theme');
+        const root = document.documentElement;
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme === 'dark') {
+            root.classList.add('dark');
+            toggleButton.textContent = '🌞';
+        }
+
+        toggleButton.addEventListener('click', () => {
+            const isDark = root.classList.toggle('dark');
+            toggleButton.textContent = isDark ? '🌞' : '🌙';
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    </script>
+
+</body>
+
+</html>
